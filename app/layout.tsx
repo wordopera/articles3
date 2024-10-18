@@ -6,7 +6,7 @@ import 'css/tailwind.css';
 import 'pliny/search/algolia.css';
 import 'remark-github-blockquote-alert/alert.css';
 
-import { Lato, Open_Sans } from 'next/font/google'; // Importing both fonts
+import { Lato, Open_Sans } from 'next/font/google';
 import { Analytics, AnalyticsConfig } from 'pliny/analytics';
 import { SearchProvider, SearchConfig } from 'pliny/search';
 import Header from '@/components/Header';
@@ -19,14 +19,14 @@ import { Metadata } from 'next';
 // Load Lato as default body font
 const lato = Lato({
   subsets: ['latin'],
-  weights: ['400', '700'],
+  weight: ['400', '700'],
   display: 'swap',
 });
 
 // Load Open Sans for headings
 const openSans = Open_Sans({
   subsets: ['latin'],
-  weights: ['400', '700'],
+  weight: ['400', '700'],
   display: 'swap',
 });
 

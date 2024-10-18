@@ -2,11 +2,11 @@
 // date: October 18, 2024
 // description: Tailwind configuration updated to use Lato for body text (sans) and Open Sans for headings (heading).
 
-const { fontFamily } = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+import { fontFamily } from 'tailwindcss/defaultTheme';
+import colors from 'tailwindcss/colors';
 
 /** @type {import("tailwindcss/types").Config } */
-module.exports = {
+const config = {
   content: [
     './node_modules/pliny/**/*.js',
     './app/**/*.{js,ts,jsx,tsx}',
@@ -80,4 +80,6 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
+
+export default config;
 // Last line

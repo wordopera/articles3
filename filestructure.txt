@@ -33,7 +33,7 @@
 |-- .devcontainer
 |-- .env.example
 |-- .eslintignore
-|-- .eslintrc.js
+|-- .eslintrc.json
 |-- .gitattributes
 |-- .github
     |-- FUNDING.yml
@@ -138,7 +138,7 @@
     |-- logo.svg
     |-- projectsData.ts
     |-- references-data.bib
-    |-- siteMetadata.js
+    |-- siteMetadata.ts
 |-- faq
     |-- custom-mdx-component.md
     |-- customize-kbar-search.md
@@ -157,6 +157,7 @@
 |-- postcss.config.js
 |-- prettier.config.js
 |-- public
+    |-- fonts
     |-- search.json
     |-- static
         |-- favicons
@@ -188,3 +189,4 @@
     |-- rss.mjs
 |-- tailwind.config.js
 |-- tsconfig.json
+|-- tsconfig.tsbuildinfo
