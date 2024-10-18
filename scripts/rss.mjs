@@ -1,3 +1,7 @@
+// filepath: scripts/rss.mjs
+// date:
+// description:
+
 import { writeFileSync, mkdirSync } from 'fs';
 import path from 'path';
 import { slug } from 'github-slugger';
@@ -6,7 +10,6 @@ import siteMetadata from '../data/siteMetadata';
 import tagData from '../app/tag-data.json' assert { type: 'json' };
 import { allBlogs } from '../.contentlayer/generated/index';
 import { sortPosts } from 'pliny/utils/contentlayer';
-import { htmlEscaper } from 'pliny/utils/htmlEscaper';
 
 const outputFolder = process.env.EXPORT ? 'out' : 'public';
 
