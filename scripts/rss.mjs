@@ -6,6 +6,7 @@ import siteMetadata from '../data/siteMetadata';
 import tagData from '../app/tag-data.json' assert { type: 'json' };
 import { allBlogs } from '../.contentlayer/generated/index';
 import { sortPosts } from 'pliny/utils/contentlayer';
+import { htmlEscaper } from 'pliny/utils/htmlEscaper';
 
 const outputFolder = process.env.EXPORT ? 'out' : 'public';
 
