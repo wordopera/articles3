@@ -1,6 +1,9 @@
-// @ts-check
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+// filepath: tailwind.config.js
+// date: October 18, 2024
+// description: Tailwind configuration updated to use Lato for body text (sans) and Open Sans for headings (heading).
+
+const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
@@ -22,7 +25,8 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['Lato', ...fontFamily.sans], // Lato as the default body text font
+        heading: ['Open Sans', ...fontFamily.sans], // Open Sans as the heading font
       },
       colors: {
         primary: colors.pink,
@@ -43,7 +47,8 @@ module.exports = {
               },
               code: { color: theme('colors.primary.400') },
             },
-            'h1,h2': {
+            'h1,h2,h3,h4,h5,h6': {
+              fontFamily: theme('fontFamily.heading').join(', '), // Apply Open Sans to headings
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
             },
@@ -66,6 +71,7 @@ module.exports = {
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
+              fontFamily: theme('fontFamily.heading').join(', '), // Ensure Open Sans for inverted mode
             },
           },
         },
@@ -73,4 +79,5 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
-}
+};
+// Last line
