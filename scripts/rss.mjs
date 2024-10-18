@@ -7,7 +7,7 @@ import path from 'path';
 import { slug } from 'github-slugger';
 // import { escape } from 'pliny/utils/htmlEscaper';
 import { encode as escape } from 'he';
-import siteMetadata from '../data/siteMetadata';
+import siteMetadata from '../data/siteMetadata.ts';
 import tagData from '../app/tag-data.json' assert { type: 'json' };
 import { allBlogs } from '../.contentlayer/generated/index';
 import { sortPosts } from 'pliny/utils/contentlayer';
