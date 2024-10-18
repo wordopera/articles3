@@ -1,0 +1,187 @@
+|-- .contentlayer
+    |-- generated
+        |-- Authors
+            |-- _index.json
+            |-- _index.mjs
+            |-- authors__default.mdx.json
+            |-- authors__sparrowhawk.mdx.json
+        |-- Blog
+            |-- _index.json
+            |-- _index.mjs
+            |-- blog__code-sample.mdx.json
+            |-- blog__deriving-ols-estimator.mdx.json
+            |-- blog__github-markdown-guide.mdx.json
+            |-- blog__guide-to-using-images-in-nextjs.mdx.json
+            |-- blog__introducing-tailwind-nextjs-starter-blog.mdx.json
+            |-- blog__my-fancy-title.mdx.json
+            |-- blog__nested-route__introducing-multi-part-posts-with-nested-routing.mdx.json
+            |-- blog__new-features-in-v1.mdx.json
+            |-- blog__pictures-of-canada.mdx.json
+            |-- blog__release-of-tailwind-nextjs-starter-blog-v2.0.mdx.json
+            |-- blog__the-time-machine.mdx.json
+        |-- index.d.ts
+        |-- index.mjs
+        |-- types.d.ts
+    |-- package.json
+|-- .devcontainer
+|-- .env.example
+|-- .eslintignore
+|-- .eslintrc.js
+|-- .gitattributes
+|-- .github
+    |-- FUNDING.yml
+    |-- ISSUE_TEMPLATE
+        |-- bug_report.md
+        |-- feature_request.md
+    |-- workflows
+        |-- pages.yml
+|-- .gitignore
+|-- .husky
+    |-- .gitignore
+    |-- _
+        |-- .gitignore
+        |-- applypatch-msg
+        |-- commit-msg
+        |-- h
+        |-- husky.sh
+        |-- post-applypatch
+        |-- post-checkout
+        |-- post-commit
+        |-- post-merge
+        |-- post-rewrite
+        |-- pre-applypatch
+        |-- pre-auto-gc
+        |-- pre-commit
+        |-- pre-merge-commit
+        |-- pre-push
+        |-- pre-rebase
+        |-- prepare-commit-msg
+    |-- pre-commit
+|-- .yarn
+    |-- releases
+        |-- yarn-3.6.1.cjs
+|-- LICENSE
+|-- README.md
+|-- app
+    |-- Main.tsx
+    |-- about
+        |-- page.tsx
+    |-- api
+        |-- newsletter
+            |-- route.ts
+    |-- blog
+        |-- [...slug]
+            |-- page.tsx
+        |-- page
+            |-- [page]
+                |-- page.tsx
+        |-- page.tsx
+    |-- layout.tsx
+    |-- not-found.tsx
+    |-- page.tsx
+    |-- projects
+        |-- page.tsx
+    |-- robots.ts
+    |-- seo.tsx
+    |-- sitemap.ts
+    |-- tag-data.json
+    |-- tags
+        |-- [tag]
+            |-- page.tsx
+        |-- page.tsx
+    |-- theme-providers.tsx
+|-- components
+    |-- Card.tsx
+    |-- Comments.tsx
+    |-- Footer.tsx
+    |-- Header.tsx
+    |-- Image.tsx
+    |-- LayoutWrapper.tsx
+    |-- Link.tsx
+    |-- MDXComponents.tsx
+    |-- MobileNav.tsx
+    |-- PageTitle.tsx
+    |-- ScrollTopAndComment.tsx
+    |-- SearchButton.tsx
+    |-- SectionContainer.tsx
+    |-- TableWrapper.tsx
+    |-- Tag.tsx
+    |-- ThemeSwitch.tsx
+    |-- social-icons
+        |-- icons.tsx
+        |-- index.tsx
+|-- contentlayer.config.ts
+|-- css
+    |-- prism.css
+    |-- tailwind.css
+|-- data
+    |-- authors
+        |-- default.mdx
+        |-- sparrowhawk.mdx
+    |-- blog
+        |-- code-sample.mdx
+        |-- deriving-ols-estimator.mdx
+        |-- github-markdown-guide.mdx
+        |-- guide-to-using-images-in-nextjs.mdx
+        |-- introducing-tailwind-nextjs-starter-blog.mdx
+        |-- my-fancy-title.mdx
+        |-- nested-route
+            |-- introducing-multi-part-posts-with-nested-routing.mdx
+        |-- new-features-in-v1.mdx
+        |-- pictures-of-canada.mdx
+        |-- release-of-tailwind-nextjs-starter-blog-v2.0.mdx
+        |-- the-time-machine.mdx
+    |-- headerNavLinks.ts
+    |-- logo.svg
+    |-- projectsData.ts
+    |-- references-data.bib
+    |-- siteMetadata.js
+|-- faq
+    |-- custom-mdx-component.md
+    |-- customize-kbar-search.md
+|-- jsconfig.json
+|-- layouts
+    |-- AuthorLayout.tsx
+    |-- ListLayout.tsx
+    |-- ListLayoutWithTags.tsx
+    |-- PostBanner.tsx
+    |-- PostLayout.tsx
+    |-- PostSimple.tsx
+|-- next-env.d.ts
+|-- next.config.js
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- prettier.config.js
+|-- public
+    |-- search.json
+    |-- static
+        |-- favicons
+            |-- android-chrome-96x96.png
+            |-- apple-touch-icon.png
+            |-- browserconfig.xml
+            |-- favicon-16x16.png
+            |-- favicon-32x32.png
+            |-- favicon.ico
+            |-- mstile-150x150.png
+            |-- safari-pinned-tab.svg
+            |-- site.webmanifest
+        |-- images
+            |-- avatar.png
+            |-- canada
+                |-- lake.jpg
+                |-- maple.jpg
+                |-- mountains.jpg
+                |-- toronto.jpg
+            |-- github-traffic.png
+            |-- google.png
+            |-- logo.png
+            |-- ocean.jpeg
+            |-- sparrowhawk-avatar.jpg
+            |-- time-machine.jpg
+            |-- twitter-card.png
+|-- scripts
+    |-- postbuild.mjs
+    |-- rss.mjs
+|-- tailwind.config.js
+|-- tsconfig.json
