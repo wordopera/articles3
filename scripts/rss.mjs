@@ -9,8 +9,8 @@ import { slug } from 'github-slugger';
 import { encode as escape } from 'he';
 import siteMetadata from '../data/siteMetadata.ts';
 import tagData from '../app/tag-data.json' assert { type: 'json' };
-import { allBlogs } from '../.contentlayer/generated/index.ts';
-import { sortPosts } from 'pliny/utils/contentlayer.ts';
+import { allBlogs } from '../.contentlayer/generated/index.js';
+import { sortPosts } from 'pliny/utils/contentlayer.js';
 
 const outputFolder = process.env.EXPORT ? 'out' : 'public';
 
