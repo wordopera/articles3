@@ -8,6 +8,13 @@
         |-- Blog
             |-- _index.json
             |-- _index.mjs
+            |-- blog__CallCentreBuild.mdx.json
+            |-- blog__MADueDiligence.mdx.json
+            |-- blog__MAFounderStrategy.mdx.json
+            |-- blog__PartnerwithInvestmentBanker2.mdx.json
+            |-- blog__RealEstateAcquisition.mdx.json
+            |-- blog__TradingPlatformImplementation.mdx.json
+            |-- blog__TradingSystemReplacement.mdx.json
             |-- blog__code-sample.mdx.json
             |-- blog__deriving-ols-estimator.mdx.json
             |-- blog__github-markdown-guide.mdx.json
@@ -154,6 +161,7 @@
 |-- postcss.config.js
 |-- prettier.config.js
 |-- public
+    |-- fonts
     |-- search.json
     |-- static
         |-- favicons
