@@ -1,67 +1,8 @@
-// filepath: data/siteMetadata.ts
+// filepath: data/siteMetadata.js
 // date: October 18, 2024
-// description: Site metadata configuration for the blog with TypeScript typing.
+// description: Site metadata configuration for the blog.
 
-interface GiscusConfig {
-  repo: string;
-  repositoryId: string;
-  category: string;
-  categoryId: string;
-  mapping: 'pathname' | 'url' | 'title';
-  reactions: '1' | '0';
-  metadata: '1' | '0';
-  theme: string;
-  darkTheme: string;
-  themeURL: string;
-  lang: string;
-}
-
-interface CommentsConfig {
-  provider: 'giscus';
-  giscusConfig: GiscusConfig;
-}
-
-interface SiteMetadata {
-  title: string;
-  author: string;
-  headerTitle: string;
-  description: string;
-  language: string;
-  theme: 'system' | 'dark' | 'light';
-  siteUrl: string;
-  siteLogo: string;
-  socialBanner: string;
-  email: string;
-  github: string;
-  x: string;
-  facebook: string;
-  youtube: string;
-  linkedin: string;
-  locale: string;
-  stickyNav: boolean;
-  analytics: {
-    umamiAnalytics: {
-      umamiWebsiteId?: string;
-    };
-  };
-  newsletter: {
-    provider: 'buttondown';
-  };
-  comments: CommentsConfig;
-  search: {
-    provider: 'kbar' | 'algolia';
-    kbarConfig: {
-      searchDocumentsPath: string;
-    };
-  };
-  twitter?: string;
-  instagram?: string;
-  threads?: string;
-  medium?: string;
-  siteRepo?: string;
-}
-
-const siteMetadata: SiteMetadata = {
+const siteMetadata = {
   title: 'Integration Professionals Blog',
   author: 'Stephen Wise',
   headerTitle: 'Integration Professionals Blog',
@@ -89,7 +30,7 @@ const siteMetadata: SiteMetadata = {
     provider: 'buttondown',
   },
   comments: {
-    provider: 'giscus',
+    provider: 'giscus', // Set the provider to the literal "giscus"
     giscusConfig: {
       repo: process.env.NEXT_PUBLIC_GISCUS_REPO || '',
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID || '',

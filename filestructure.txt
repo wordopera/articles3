@@ -99,7 +99,7 @@
     |-- theme-providers.tsx
 |-- components
     |-- Card.tsx
-    |-- Comments.tsx
+    |-- Comments.js
     |-- Footer.tsx
     |-- Header.tsx
     |-- Image.tsx
@@ -138,7 +138,7 @@
     |-- logo.svg
     |-- projectsData.ts
     |-- references-data.bib
-    |-- siteMetadata.ts
+    |-- siteMetadata.js
 |-- faq
     |-- custom-mdx-component.md
     |-- customize-kbar-search.md
