@@ -5,11 +5,11 @@
 import { writeFileSync, mkdirSync } from 'fs';
 import path from 'path';
 import { slug } from 'github-slugger';
-// import { escape } from 'pliny/utils/htmlEscaper';
-import { encode as escape } from 'he';
+import { escape } from 'pliny/utils/htmlEscaper.js';
+//import { encode as escape } from 'he';
 import siteMetadata from '../data/siteMetadata.ts';
 import tagData from '../app/tag-data.json' assert { type: 'json' };
-import { allBlogs } from '../.contentlayer/generated/index.js';
+import { allBlogs } from '../.contentlayer/generated/index.mjs';
 import { sortPosts } from 'pliny/utils/contentlayer.js';
 
 const outputFolder = process.env.EXPORT ? 'out' : 'public';
