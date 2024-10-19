@@ -1,22 +1,34 @@
-import 'css/tailwind.css'
-import 'pliny/search/algolia.css'
-import 'remark-github-blockquote-alert/alert.css'
+// filepath: app/layout.tsx
+// date: October 18, 2024
+// description: Root layout updated to use Lato as default font and Open Sans for headings.
 
-import { Space_Grotesk } from 'next/font/google'
-import { Analytics, AnalyticsConfig } from 'pliny/analytics'
-import { SearchProvider, SearchConfig } from 'pliny/search'
-import Header from '@/components/Header'
-import SectionContainer from '@/components/SectionContainer'
-import Footer from '@/components/Footer'
-import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from './theme-providers'
-import { Metadata } from 'next'
+import 'css/tailwind.css';
+import 'pliny/search/algolia.css';
+import 'remark-github-blockquote-alert/alert.css';
 
-const space_grotesk = Space_Grotesk({
+import { Lato, Open_Sans } from 'next/font/google';
+import { Analytics, AnalyticsConfig } from 'pliny/analytics';
+import { SearchProvider, SearchConfig } from 'pliny/search';
+import Header from '@/components/Header';
+import SectionContainer from '@/components/SectionContainer';
+import Footer from '@/components/Footer';
+import siteMetadata from '@/data/siteMetadata';
+import { ThemeProviders } from './theme-providers';
+import { Metadata } from 'next';
+
+// Load Lato as default body font
+const lato = Lato({
   subsets: ['latin'],
+  weight: ['400', '700'],
   display: 'swap',
-  variable: '--font-space-grotesk',
-})
+});
+
+// Load Open Sans for headings
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -56,15 +68,15 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: [siteMetadata.socialBanner],
   },
-}
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const basePath = process.env.BASE_PATH || ''
+  const basePath = process.env.BASE_PATH || '';
 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${space_grotesk.variable} scroll-smooth`}
+      className={`${lato.className} scroll-smooth`} // Apply Lato as default font
       suppressHydrationWarning
     >
       <link
@@ -107,5 +119,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </ThemeProviders>
       </body>
     </html>
-  )
+  );
 }
+// Last line

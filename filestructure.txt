@@ -33,7 +33,7 @@
 |-- .devcontainer
 |-- .env.example
 |-- .eslintignore
-|-- .eslintrc.js
+|-- .eslintrc.json
 |-- .gitattributes
 |-- .github
     |-- FUNDING.yml
@@ -124,25 +124,21 @@
 |-- data
     |-- authors
         |-- default.mdx
-        |-- sparrowhawk.mdx
     |-- blog
-        |-- code-sample.mdx
-        |-- deriving-ols-estimator.mdx
-        |-- github-markdown-guide.mdx
-        |-- guide-to-using-images-in-nextjs.mdx
-        |-- introducing-tailwind-nextjs-starter-blog.mdx
-        |-- my-fancy-title.mdx
+        |-- CallCentreBuild.mdx
+        |-- MADueDiligence.mdx
+        |-- MAFounderStrategy.mdx
+        |-- PartnerwithInvestmentBanker2.mdx
+        |-- RealEstateAcquisition.mdx
+        |-- TradingPlatformImplementation.mdx
+        |-- TradingSystemReplacement.mdx
         |-- nested-route
             |-- introducing-multi-part-posts-with-nested-routing.mdx
-        |-- new-features-in-v1.mdx
-        |-- pictures-of-canada.mdx
-        |-- release-of-tailwind-nextjs-starter-blog-v2.0.mdx
-        |-- the-time-machine.mdx
     |-- headerNavLinks.ts
     |-- logo.svg
     |-- projectsData.ts
     |-- references-data.bib
-    |-- siteMetadata.js
+    |-- siteMetadata.ts
 |-- faq
     |-- custom-mdx-component.md
     |-- customize-kbar-search.md
@@ -193,3 +189,4 @@
     |-- rss.mjs
 |-- tailwind.config.js
 |-- tsconfig.json
+|-- tsconfig.tsbuildinfo
