@@ -8,14 +8,27 @@
         |-- Blog
             |-- _index.json
             |-- _index.mjs
+            |-- blog__AITrendsCompute.mdx.json
+            |-- blog__AITrendsEnergy.mdx.json
+            |-- blog__AITrendsEntertainment.mdx.json
+            |-- blog__AITrendsHospitality.mdx.json
+            |-- blog__AITrendsLogisitics.mdx.json
+            |-- blog__AITrendsLogistics.mdx.json
+            |-- blog__AITrendsNews.mdx.json
+            |-- blog__AITrendsRobotics.mdx.json
             |-- blog__AITtendsinPrompting.mdx.json
             |-- blog__CallCentreBuild.mdx.json
+            |-- blog__DriveChangetoIncreaseValue.mdx.json
+            |-- blog__HarnessAITrends.mdx.json
             |-- blog__MADueDiligence.mdx.json
             |-- blog__MAFounderStrategy.mdx.json
             |-- blog__PartnerwithInvestmentBanker2.mdx.json
             |-- blog__RealEstateAcquisition.mdx.json
+            |-- blog__StephenExpertise.mdx.json
+            |-- blog__SynergyLifeAssurance.mdx.json
             |-- blog__TradingPlatformImplementation.mdx.json
             |-- blog__TradingSystemReplacement.mdx.json
+            |-- blog__UnlockPowerProjectManagement.mdx.json
             |-- blog__code-sample.mdx.json
             |-- blog__deriving-ols-estimator.mdx.json
             |-- blog__github-markdown-guide.mdx.json
@@ -127,14 +140,30 @@
     |-- authors
         |-- default.mdx
     |-- blog
+        |-- AITrendsCompute.mdx
+        |-- AITrendsEnergy.mdx
+        |-- AITrendsEntertainment.mdx
+        |-- AITrendsHealthcare.mdx
+        |-- AITrendsHospitality.mdx
+        |-- AITrendsLogisitics.mdx
+        |-- AITrendsLogistics.mdx
+        |-- AITrendsNews.mdx
+        |-- AITrendsRobotics.mdx
+        |-- AITrendsSports.mdx
         |-- AITtendsinPrompting.mdx
         |-- CallCentreBuild.mdx
+        |-- DerivativesTrading.mdx
+        |-- DriveChangetoIncreaseValue.mdx
+        |-- HarnessAITrends.mdx
         |-- MADueDiligence.mdx
         |-- MAFounderStrategy.mdx
         |-- PartnerwithInvestmentBanker2.mdx
         |-- RealEstateAcquisition.mdx
+        |-- StephenExpertise.mdx
+        |-- SynergyLifeAssurance.mdx
         |-- TradingPlatformImplementation.mdx
         |-- TradingSystemReplacement.mdx
+        |-- UnlockPowerProjectManagement.mdx
         |-- nested-route
             |-- introducing-multi-part-posts-with-nested-routing.mdx
         |-- synergy-life-assurance-acquisition.mdx
