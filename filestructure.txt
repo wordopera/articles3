@@ -8,6 +8,7 @@
         |-- Blog
             |-- _index.json
             |-- _index.mjs
+            |-- blog__AITtendsinPrompting.mdx.json
             |-- blog__CallCentreBuild.mdx.json
             |-- blog__MADueDiligence.mdx.json
             |-- blog__MAFounderStrategy.mdx.json
@@ -25,6 +26,7 @@
             |-- blog__new-features-in-v1.mdx.json
             |-- blog__pictures-of-canada.mdx.json
             |-- blog__release-of-tailwind-nextjs-starter-blog-v2.0.mdx.json
+            |-- blog__synergy-life-assurance-acquisition.mdx.json
             |-- blog__the-time-machine.mdx.json
         |-- index.d.ts
         |-- index.mjs
@@ -125,6 +127,7 @@
     |-- authors
         |-- default.mdx
     |-- blog
+        |-- AITtendsinPrompting.mdx
         |-- CallCentreBuild.mdx
         |-- MADueDiligence.mdx
         |-- MAFounderStrategy.mdx
@@ -134,6 +137,7 @@
         |-- TradingSystemReplacement.mdx
         |-- nested-route
             |-- introducing-multi-part-posts-with-nested-routing.mdx
+        |-- synergy-life-assurance-acquisition.mdx
     |-- headerNavLinks.ts
     |-- logo.svg
     |-- projectsData.ts
@@ -155,6 +159,7 @@
 |-- package-lock.json
 |-- package.json
 |-- postcss.config.js
+|-- prepared-old-articles
 |-- prettier.config.js
 |-- public
     |-- fonts

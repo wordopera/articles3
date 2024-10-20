@@ -23,6 +23,7 @@ import rehypePrismPlus from 'rehype-prism-plus';
 import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from '@/data/siteMetadata';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer.js';
+import { build } from 'esbuild';
 
 const root = process.cwd();
 const isProduction = process.env.NODE_ENV === 'production';
@@ -106,6 +107,10 @@ export const Blog = defineDocumentType(() => ({
     layout: { type: 'string' },
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
+    categories: { type: 'list', of: { type: 'string' }, required: false }, // Added categories
+    slug: { type: 'string', required: true }, // Added slug
+    SEO_Title: { type: 'string', required: false }, // Added SEO_Title
+    SEO_Description: { type: 'string', required: false }, // Added SEO_Description
   },
   computedFields: {
     ...computedFields,
@@ -119,7 +124,7 @@ export const Blog = defineDocumentType(() => ({
         dateModified: doc.lastmod || doc.date,
         description: doc.summary,
         image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
-        url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
+        url: `${siteMetadata.siteUrl}/${doc.slug}`, // Using slug for URL
       }),
     },
   },

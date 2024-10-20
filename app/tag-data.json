@@ -1,1 +1,22 @@
-{ "tailwind": 7, "nextjs": 7, "blog": 7, "multi-author": 1, "next-js": 1, "feature": 1 }
+{
+  "ai": 1,
+  "prompting": 1,
+  "baby-boomers": 1,
+  "parenting": 1,
+  "case-study": 7,
+  "energy": 2,
+  "call-center": 1,
+  "home-services": 1,
+  "blog": 1,
+  "managed-services": 1,
+  "growth": 1,
+  "ma": 1,
+  "manufacturing": 1,
+  "real-estate": 1,
+  "acquisition": 2,
+  "technology": 2,
+  "capital-markets": 2,
+  "project-management": 1,
+  "life-insurance": 1,
+  "synergy": 1
+}
