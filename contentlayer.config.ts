@@ -1,3 +1,7 @@
+// filepath: contentlayer.config.ts
+// date: October 23, 2024
+// description: Configuration file for Contentlayer with seo_title and seo_description fields and defined createTagCount function
+
 import { defineDocumentType, ComputedFields, makeSource } from 'contentlayer2/source-files';
 import { writeFileSync } from 'fs';
 import readingTime from 'reading-time';
@@ -78,6 +82,9 @@ function createTagCount(allBlogs) {
   writeFileSync('./app/tag-data.json', JSON.stringify(tagCount));
 }
 
+/**
+ * Create a local search index
+ */
 function createSearchIndex(allBlogs) {
   if (
     siteMetadata?.search?.provider === 'kbar' &&
@@ -107,10 +114,10 @@ export const Blog = defineDocumentType(() => ({
     layout: { type: 'string' },
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
-    categories: { type: 'list', of: { type: 'string' }, required: false }, // Added categories
-    slug: { type: 'string', required: true }, // Added slug
-    SEO_Title: { type: 'string', required: false }, // Added SEO_Title
-    SEO_Description: { type: 'string', required: false }, // Added SEO_Description
+    categories: { type: 'list', of: { type: 'string' }, required: false },
+    slug: { type: 'string', required: true },
+    seo_title: { type: 'string', required: false }, // Added seo_title
+    seo_description: { type: 'string', required: false }, // Added seo_description
   },
   computedFields: {
     ...computedFields,
@@ -124,7 +131,7 @@ export const Blog = defineDocumentType(() => ({
         dateModified: doc.lastmod || doc.date,
         description: doc.summary,
         image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
-        url: `${siteMetadata.siteUrl}/${doc.slug}`, // Using slug for URL
+        url: `${siteMetadata.siteUrl}/${doc.slug}`,
       }),
     },
   },
@@ -185,3 +192,5 @@ export default makeSource({
     createSearchIndex(allBlogs);
   },
 });
+
+// last line
