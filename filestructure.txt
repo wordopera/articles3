@@ -126,12 +126,16 @@
     |-- MDXComponents.tsx
     |-- MobileNav.tsx
     |-- PageTitle.tsx
+    |-- ReachOutFooter.tsx:Zone.Identifier
+    |-- ResultsFooter.tsx:Zone.Identifier
     |-- ScrollTopAndComment.tsx
     |-- SearchButton.tsx
     |-- SectionContainer.tsx
+    |-- StephenWiseFooter.tsx:Zone.Identifier
     |-- TableWrapper.tsx
     |-- Tag.tsx
     |-- ThemeSwitch.tsx
+    |-- navbar
     |-- social-icons
         |-- icons.tsx
         |-- index.tsx
